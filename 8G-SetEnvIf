@@ -18,7 +18,7 @@
 	SetEnvIfExpr "%{QUERY_STRING} =~ m#(?:/|%2f)(?:wp-)?config(?:(?:\.|%2e)inc)?(?:\.|%2e)php#i" bot
 	SetEnvIfExpr "%{QUERY_STRING} =~ m#(?:thumbs?(?:_editor|open)?|tim(?:thumbs?)?)(?:\.|%2e)php#i" bot
 	SetEnvIfExpr "%{QUERY_STRING} =~ m#(?:absolute_|base|root_)(?:dir|path)(?:=|%3d)(?:ftp|https?)#i" bot
-	SetEnvIfExpr "%{QUERY_STRING} =~ m#(?:s)?(?:ftp|inurl|php)(?:s)?:(?:/|%2f|%u2215)(?:/|%2f|%u2215)#i" bot
+	SetEnvIfExpr "%{QUERY_STRING} =~ m#s?(?:ftp|inurl|php)s?:(?:/|%2f|%u2215)(?:/|%2f|%u2215)#i" bot
 	SetEnvIfExpr "%{QUERY_STRING} =~ m#(?:\.|20)(?:get|the)(?:_|%5f)(?:permalink|posts_page_url)(?:\(|%28)#i" bot
 	SetEnvIfExpr "%{QUERY_STRING} =~ m#(?:boot|win)(?:\.|%2e)ini|etc(?:/|%2f)passwd|self(?:/|%2f)environ#i" bot
 	SetEnvIfExpr "%{QUERY_STRING} =~ m#(?:/|%2f){3,3}|(?:\.|%2e){3,3}|(?:\.|%2e){2,2}(?:/|%2f|%u2215)#i" bot
